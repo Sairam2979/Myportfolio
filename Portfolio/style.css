@@ -1,4 +1,4 @@
-/* Reset */
+Reset
 * {
   margin: 0;
   padding: 0;
@@ -13,26 +13,30 @@ body {
 }
 
 header {
-  background-color: #09131c;
-  padding: 20px 20px;
+  background-color: #071622;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: flex-end;
+  margin: 0;
 }
 
 nav ul li {
-  margin-left: 20px;
+  display: inline;
+  margin: 0 20px;
+  color: white;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .intro {
@@ -93,7 +97,7 @@ nav ul li a {
 }
 
 .intro-image img {
-  width: 400px;
+  width: 300px;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 30px 10px rgba(0, 240, 255, 0.7);
@@ -109,7 +113,12 @@ nav ul li a {
   background: linear-gradient(145deg, #7600ff, #00f0ff);
   border-radius: 50%;
   padding: 15px;
+  margin-right: 100px;
   box-shadow: 0 0 30px 15px rgba(0, 240, 255, 0.4);
+}
+
+.intro-image img:hover{
+  width: 350px;
 }
 
 
@@ -150,7 +159,7 @@ nav ul li a {
 }
 
 .about-image img {
-  width: 400px;
+  width: 300px;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 30px 10px rgba(0, 240, 255, 0.7);
@@ -166,10 +175,14 @@ nav ul li a {
   background: linear-gradient(145deg, #7600ff, #00f0ff);
   border-radius: 50%;
   padding: 15px;
+  margin-left: 100px;
   box-shadow: 0 0 30px 15px rgba(0, 240, 255, 0.4);
 }
 
-
+.about-image img:hover
+{
+  width: 350px;
+}
 
 .services {
   padding: 100px 20px;
@@ -334,7 +347,7 @@ p {
 }
 
 .projects-section h2 span {
-  color: #00f260; /* Highlighted color */
+  color: #00f260; 
 }
 
 .projects-container {
